@@ -1,0 +1,359 @@
+body{
+    font-family: sans-serif;
+    background-color: rgba(0,151,111,0.3);
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(0,151,111,255);
+}
+
+.div-container{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-self: center;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-div1{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+.main-div1 > div > h3{
+    font-size:20px;
+    color: white;
+}
+
+.main-div1-1{
+    /* display: flex;
+    flex-direction: column;
+    align-self: center; */
+    width: 800px;
+    height: 450px;
+    content: url(./images/motorola-cmob.jpg);
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: rgba(0,151,111,255);
+    border-radius: 0 0 10px 10px;
+}
+
+.progress-bar{
+    display: flex;
+    align-self: center;
+    background-color: white;
+    height: 15px;
+    width: 280px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.progress-bar-dots-m{
+    height: 100%;
+    width: 14.28%;
+    background-color: rgba(0,91,111,255);
+}
+
+.br-dot1{
+    border-radius: 5px 0 0 5px;
+}
+
+.br-dot7{
+    border-radius: 0 5px 5px 0;
+}
+
+.listaCheck > ul{
+    list-style: none;
+    padding: 0;
+    margin: 55px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+}
+
+.listaCheck > ul > li{
+    height: 25%;
+}
+
+.listaCheck > ul > li > input{
+    height: 18px;
+    width: 18px;
+}
+
+.inputQuestion > input{
+    width: 40%;
+    height: 30px;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.inputQuestion > textarea{
+    resize: none;
+    width: 70%;
+    height: 200px;
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.selectCheck > select{
+    padding: 0;
+    margin: 55px 0 0 20px;
+    height: 35px;
+    width: 100px;
+    text-indent:10%;
+    color: white;
+    background-color: rgba(0,151,111,255);
+}
+
+.backButton{
+    background-color: rgb(151, 199, 186); /* Green */
+    border: none;
+    padding: 15px 32px;
+    margin: 10px 0 10px 10%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+}
+
+.nextButton{
+    background-color: rgb(151, 199, 186); /* Green */
+    border: none;
+    padding: 15px 32px;
+    margin: 10px 10% 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-div1 > div > button{
+    
+    background-color: rgb(151, 199, 186); /* Green */
+    border: none;
+    padding: 15px 32px;
+    margin: 10px 10% 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ovojep{
+    margin-top: 5.5%;
+}
+
+.question{
+    font-size: 20px;
+}
+.nav-logout{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0,151,111,255);
+    margin-bottom: 20px;
+}
+
+.logout{
+    background-color: rgb(151, 249, 186); /* Green */
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    margin: 20px 50px 20px 20px;
+}
+
+.image1{
+    background-image: url(/images/nomofobija-1-640x452.jpg);
+}
+
+.remove-btn{
+    display: none;
+}
+
+.disabled-button{
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color:rgb(241, 199, 186);
+}
+
+@media screen and (max-width: 1000px) {
+    .main-div-1000{
+        width: 700px;
+        height: 450px;
+    }
+
+    .nav-bar-1000{
+        margin-top: -45px;
+    }
+
+    .logout-1000{
+        padding: 10px 16px 10px 16px;
+        font-size: 14px;
+    }
+    
+    .backButton-1000{
+        padding: 5px 20px 5px 20px;
+    }
+
+    .nextButton-1000{
+        padding: 5px 20px 5px 20px;
+    }
+
+    .listaCheck-1000 > ul{
+        margin: 30px 0 0 0;
+        height: 200px;
+    }    
+}
+
+
+@media screen and (max-width: 450px) {
+    
+    h1{
+        font-size: 16px;
+    }
+    .main-div-450{
+        width: 300px;
+        height: 370px;
+    }
+
+    .question-450{
+        font-size: 16px;
+    }
+
+    .nav-bar-450{
+        margin-top: -125px;
+    }
+
+    .logout-450{
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+    }
+    
+    .backButton-450{
+        padding: 5px 20px 5px 20px;
+    }
+
+    .nextButton-450{
+        padding: 5px 20px 5px 20px;
+    }
+
+    .listaCheck-450 > ul{
+        margin: 25px 0 0 0;
+        flex-wrap: nowrap;
+        height: 200px;
+    }
+    
+    .listaCheck-450 > ul > li > input{
+        height: 15px;
+        width: 15px;
+    }
+        
+}
+
+@media screen and (max-width: 450px) {
+   
+    .main-div1{
+        width: 100%;
+    }
+
+    .main-div1 > div > h3{
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .main-div1 > div > button{
+        
+        padding: 13px 20px;
+        margin-right: 4%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .main-div1-1{
+        width: 100%;
+        height: 270px;
+        align-self: center;
+        /* width: 800px;
+        height: 450px; */
+    }
+    
+    .logout{
+        font-size: 16px;
+        margin-right: 4%;
+    }
+
+    .brojevi{
+        width: 90%;
+        font-size: 16px;
+        order: -1;
+    }
+    
+    .progress-bar{
+        height: 15px;
+        width: 200px;
+        margin: 10px;
+    }
+    
+    .nextButton{
+        /* font-size: 13px;
+        height: 30px;
+        width: 70px; */
+        margin-left: 10%;
+        font-size: 16px;
+    }
+
+    .nav-bar{
+        /* margin-top: 0px; */
+        flex-wrap: wrap;
+    }
+
+    .question{
+        margin-top: 0px;
+    }
+    .selectCheck > select{
+        margin-top: 20px;
+    }
+
+    .inputQuestion > input{
+        width: 60%;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .inputQuestion > textarea{
+        resize: none;
+        width: 85%;
+        height: 170px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main-div1-1{
+        height: 200px;
+    }
+}
